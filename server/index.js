@@ -40,6 +40,14 @@ const postRouter = require("./routes/post");
 
 app.use("/post", postRouter);
 
+const registerRouter = require("./routes/register");
+
+app.use("/register", registerRouter);
+
+const loginRouter = require("./routes/login");
+
+app.use("/login", loginRouter);
+
 app.listen(7000, function () {
   console.log("Server started on port 7000");
 });
