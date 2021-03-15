@@ -11,16 +11,21 @@ function Blog(props) {
 
   return (
     <Link to={"/post/" + props.title}>
-      <div className="note">
-        <img
-          src={"https://source.unsplash.com/3000x3000/?" + props.title}
-          alt="Hs"
-        />
-        <h1>{props.title}</h1>
-        <p>{props.content.substring(1, 150)}...</p>
-        <button onClick={handleDelete}>
-          <DeleteIcon />
-        </button>
+      <div class="quotes">
+        <div className="note card">
+          <div class="box box1">
+            <img
+              src={"https://source.unsplash.com/3000x3000/?" + props.title}
+              alt="Hs"
+            />
+            <h1>{props.title}</h1>
+            <p>{props.content.substring(0, 150)}...</p>
+            <button onClick={handleDelete}>
+              <DeleteIcon />
+            </button>
+          </div>
+        </div>
+        <div class="bg"></div>
       </div>
     </Link>
   );

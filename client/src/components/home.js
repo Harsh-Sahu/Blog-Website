@@ -18,7 +18,7 @@ function Home() {
       console.log(error);
     });
 
-  return <div>{blogs.map(createBlog)}</div>;
+  return <div className="homeimg">{blogs.map(createBlog)}</div>;
 }
 
 export default Home;

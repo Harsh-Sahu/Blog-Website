@@ -48,6 +48,10 @@ const loginRouter = require("./routes/login");
 
 app.use("/login", loginRouter);
 
+const feedbackRouter = require("./routes/feedback");
+
+app.use("/feedback", feedbackRouter);
+
 app.listen(7000, function () {
   console.log("Server started on port 7000");
 });

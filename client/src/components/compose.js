@@ -46,7 +46,7 @@ function Posts() {
       .then((res) => console.log(res.data))
       .catch((err) => console.log(err));
 
-    window.location = "/";
+    window.location = "/home";
   }
 
   return (
